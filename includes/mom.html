@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дела мамы</title>
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script type="module">
+        import {createTodoApp} from './todo-app/front.js';
+        document.addEventListener('DOMContentLoaded', function(){
+            createTodoApp(document.getElementById('todo-app'), document.title);
+            });
+    </script>
+</head>
+<body>
+    <div class="container mb-5 mt-2 d-flex justify-content-between">
+        <nav class="nav">
+            <a href="./index.html" class="nav-link">Для меня</a>
+            <a href="./mom.html" class="nav-link">Для мамы</a>
+            <a href="./dad.html" class="nav-link">Для папы</a>
+        </nav>
+        <div class="btn-group">
+            <a href="" class="btn btn-outline-primary" id="local">Локальное</a>
+            <a href="" class="btn btn-outline-primary" id="api">Сервер</a>
+        </div>
+    </div>
+    <div class="container" id="todo-app">
+
+    </div>
+</body>
+</html>
