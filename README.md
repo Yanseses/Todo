@@ -1,3 +1,3 @@
-# Cписок дел
+# Todo list
 
-Реализована возможность переключения между локальным хранилищем данных (localstorage) и сервером (node)
+Implemented the ability to switch between local data storage (localstorage) and server (node)
